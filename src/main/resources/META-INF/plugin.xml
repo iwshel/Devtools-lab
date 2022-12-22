@@ -1,0 +1,19 @@
+<idea-plugin>
+  <id>itmo.logo</id>
+  <name>Itmo Progress Bar</name>
+  <version>0.0.1</version>
+  <vendor>Vera</vendor>
+
+  <description><![CDATA[
+      <p>Displays Itmo logo in jetbrains progress bar.</p>
+    ]]></description>
+
+  <change-notes/>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <applicationListeners>
+    <listener class="ProgressBarLafManagerListener"
+              topic="com.intellij.ide.ui.LafManagerListener" />
+  </applicationListeners>
+</idea-plugin>
